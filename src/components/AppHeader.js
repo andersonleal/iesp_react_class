@@ -1,0 +1,28 @@
+import React, {Fragment} from "react";
+import {Link} from "react-router-dom";
+import styled from "styled-components";
+
+const Div = styled.div`
+    margin-top: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+    a {
+        margin: 10px;
+    }
+`;
+
+
+export const AppHeader = () => {
+    return <Div>
+        <Link to={"/"}>
+            Home
+        </Link>
+        <Link to={"/form"}>
+            Form
+        </Link>
+        <Link to={"/list"}>
+            List
+        </Link>
+    </Div>
+};
+
